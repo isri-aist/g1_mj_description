@@ -128,6 +128,7 @@
                   <geom size="0.005" pos="-0.05 -0.025 -0.03" rgba="0.2 0.2 0.2 1" />
                   <geom size="0.005" pos="0.12 0.03 -0.03" rgba="0.2 0.2 0.2 1" />
                   <geom size="0.005" pos="0.12 -0.03 -0.03" rgba="0.2 0.2 0.2 1" />
+                  <site name="lf_force" size="0.01" pos="0.035 0 -0.03" />
                 </body>
               </body>
             </body>
@@ -188,6 +189,7 @@
                   <geom size="0.005" pos="-0.05 -0.025 -0.03" rgba="0.2 0.2 0.2 1" />
                   <geom size="0.005" pos="0.12 0.03 -0.03" rgba="0.2 0.2 0.2 1" />
                   <geom size="0.005" pos="0.12 -0.03 -0.03" rgba="0.2 0.2 0.2 1" />
+                  <site name="rf_force" size="0.01" pos="0.035 0 -0.03" />
                 </body>
               </body>
             </body>
@@ -524,6 +526,15 @@
     <framequat name="imu-pelvis-quat" objtype="site" objname="secondary_imu" />
     <gyro name="imu-pelvis-angular-velocity" site="secondary_imu" noise="5e-4" cutoff="34.9"/>
     <accelerometer name="imu-pelvis-linear-acceleration" site="secondary_imu" noise="1e-2" cutoff="157"/>
+
+    <!-- F/T sensors -->
+    <!-- right foot -->
+    <force         name="RightFootForceSensor_fsensor"    site="rf_force" />
+    <torque        name="RightFootForceSensor_tsensor"    site="rf_force" />
+    <!-- left foot -->
+    <force         name="LeftFootForceSensor_fsensor"    site="lf_force" />
+    <torque        name="LeftFootForceSensor_tsensor"    site="lf_force" />
+
   </sensor>
 
 </mujoco>
