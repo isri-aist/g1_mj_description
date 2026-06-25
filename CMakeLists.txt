@@ -16,6 +16,8 @@ set(g1_models
     g1
     g1_23dof
     g1_29dof
+    g1_29dof_no_hands
+    g1_29dof_revo2
 )
 
 foreach(MODEL IN LISTS g1_models)
