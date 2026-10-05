@@ -30,7 +30,7 @@ Your mc_rtc configuration file (typically ~/.config/mc_rtc/mc_rtc.yaml) should c
 
 ```yaml
 # General mc_rtc configuration to run a G1 controller
-MainRobot: G1  # Or G1_23dof, G1_29dof (G1 defaults to 23-DOF variant)
+MainRobot: G1  # Or G1_23dof, G1_29dof, G1_no_hands, G1_Revo2 (G1 defaults to 23-DOF variant)
 Enabled: Posture  # Edit with your controller
 Timestep: 0.001
 ```
@@ -49,3 +49,5 @@ mc_mujoco
 
 - **g1_23dof**: G1 robot with 23 degrees of freedom (base configuration)
 - **g1_29dof**: G1 robot with 29 degrees of freedom (includes additional waist and wrist joints)
+- **g1_29dof_no_hands**: G1 robot with 29 degrees of freedom and with tool connectors instead of hands
+- **g1_29dof_revo2**: G1 robot with 29 degrees of freedom and with Revo2 Hands from [BrainCo](https://www.brainco-hz.com/docs/revolimb-hand/en/revo2/parameters.html)
